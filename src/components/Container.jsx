@@ -1,6 +1,5 @@
 import React from 'react'
 
-// Component 2: Uses the `children` prop
 export function Container({ title, children }) {
   return (
     <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">

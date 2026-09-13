@@ -10,11 +10,10 @@ export default function App() {
     <div className="min-h-screen bg-gray-50 p-4 md:p-8">
       <div className="mx-auto max-w-4xl space-y-6">
 
-        {/* 1. Profile Header */}
         <header className="flex flex-col gap-4 rounded-xl border border-gray-200 bg-white p-6 md:flex-row md:items-center md:justify-between shadow-sm">
           <div>
             <div className="flex items-center gap-3">
-              <h1 className="text-2xl font-bold text-gray-900">Alex Doe</h1>
+              <h1 className="text-2xl font-bold text-gray-900">Chea Panharith</h1>
               <Badge variant="default">Available</Badge>
             </div>
             <p className="mt-1 text-sm text-gray-700">Frontend Engineer</p>
@@ -25,19 +24,15 @@ export default function App() {
           </Button>
         </header>
 
-        {/* 2. Responsive 2-Column Layout (1 col on mobile, 2 col on md+) */}
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
 
-          {/* Sidebar (1 Column on md+) */}
           <aside className="space-y-6 md:col-span-1">
-            {/* Reusable Component using {children} */}
             <Container title="About">
               <p className="text-sm text-gray-700 leading-relaxed">
                 Building web applications with React, Tailwind CSS, and modern UI systems.
               </p>
             </Container>
 
-            {/* Reusable Component using props */}
             <Container title="Details">
               <InfoTag label="Experience" value="3 Years" />
               <InfoTag label="Focus" value="React & UI" />
@@ -45,18 +40,15 @@ export default function App() {
             </Container>
           </aside>
 
-          {/* Main Area (2 Columns on md+) */}
           <main className="space-y-6 md:col-span-2">
             <Container title="Projects">
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                {/* ProjectCard #1 with its own data */}
                 <ProjectCard
                   title="Todo App"
                   status="Shipped"
                   description="A fast task manager with dark mode and local persistence."
                 />
 
-                {/* ProjectCard #2 with different data */}
                 <ProjectCard
                   title="Tokenizer Tool"
                   status="In Progress"

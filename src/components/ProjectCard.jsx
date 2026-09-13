@@ -3,7 +3,6 @@ import { Card, CardHeader, CardTitle, CardContent, CardFooter } from '@/componen
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 
-// shadcn piece composed of Card + Badge + Button
 export function ProjectCard({ title, status, description }) {
   return (
     <Card className="flex flex-col justify-between">
