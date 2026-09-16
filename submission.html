@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 2 - Chea Panharith Profile Page Submission</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 12mm 15mm;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #1e293b;
+      line-height: 1.4;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 8px;
+      margin-bottom: 14px;
+    }
+    h1 {
+      font-size: 18px;
+      margin: 0 0 4px 0;
+      color: #0f172a;
+    }
+    .meta {
+      font-size: 12px;
+      color: #64748b;
+    }
+    .meta a {
+      color: #059669;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .section {
+      margin-bottom: 14px;
+    }
+    h2 {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #334155;
+      margin: 0 0 8px 0;
+      border-left: 3px solid #10b981;
+      padding-left: 6px;
+    }
+    .img-box {
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      background: #f8fafc;
+      text-align: center;
+      padding: 6px;
+    }
+    .img-box img {
+      max-width: 100%;
+      max-height: 250px;
+      object-fit: contain;
+      border-radius: 4px;
+      display: block;
+      margin: 0 auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 11px;
+      margin-top: 6px;
+    }
+    th, td {
+      border: 1px solid #e2e8f0;
+      padding: 5px 8px;
+      text-align: left;
+    }
+    th {
+      background: #f1f5f9;
+      color: #334155;
+    }
+    .pass {
+      color: #059669;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Task: Style & Compose the Profile Page</h1>
+    <div class="meta">
+      <strong>Student:</strong> Chea Panharith &nbsp;|&nbsp;
+      <strong>GitHub Repo:</strong> <a href="https://github.com/panharithhh/cheapanharith_Task-2-Style-Compose-the-Profile-Page-Lessons-1.6-1.9-">cheapanharith_Task-2-Style-Compose-the-Profile-Page</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>1. Deliverable: Phone & Desktop Width (Side by Side)</h2>
+    <div class="img-box">
+      <img src="screenshots/side_by_side.png" alt="Phone and Desktop Side by Side" style="max-height: 260px;">
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>2. Deliverable: ProjectCards with Distinct Data</h2>
+    <div class="img-box">
+      <img src="screenshots/project_cards.png" alt="Project Cards" style="max-height: 190px;">
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>3. Checklist Verification</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Requirement</th>
+          <th>Implementation Details</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Tailwind 4px Scale</td>
+          <td>Only standard 4px scale spacing (p-6 = 24px, gap-4 = 16px, gap-6 = 24px)</td>
+          <td class="pass">PASS</td>
+        </tr>
+        <tr>
+          <td>Color Hierarchy & Accent</td>
+          <td>text-gray-900 / 700 / 500 hierarchy with emerald green accent (bg-emerald-600)</td>
+          <td class="pass">PASS</td>
+        </tr>
+        <tr>
+          <td>Responsive Layout</td>
+          <td>Single-column mobile (grid-cols-1) to 2-column desktop (md:grid-cols-3)</td>
+          <td class="pass">PASS</td>
+        </tr>
+        <tr>
+          <td>Component with Props</td>
+          <td>InfoTag.jsx renders different data per instance via props</td>
+          <td class="pass">PASS</td>
+        </tr>
+        <tr>
+          <td>Component with Children</td>
+          <td>Container.jsx wraps nested JSX using {children}</td>
+          <td class="pass">PASS</td>
+        </tr>
+        <tr>
+          <td>shadcn ProjectCard</td>
+          <td>Composed of Card + Badge + Button, rendered twice with different data</td>
+          <td class="pass">PASS</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
